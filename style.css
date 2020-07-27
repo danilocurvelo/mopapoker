@@ -10,10 +10,12 @@ body {
 	font-family: 'Muli', sans-serif;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: top;
 	flex-direction: column;
 	min-height: 100vh;
 	margin: 0;
+	flex-shrink: 0;
+    flex-grow: 1;
 }
 
 .courses-container {
@@ -36,7 +38,7 @@ body {
 	max-width: 100%;
 	margin: 20px;
 	overflow: hidden;
-	width: 720px;
+	width: 900px;
 }
 
 .course h6 {
@@ -96,7 +98,7 @@ body {
 }
 
 .progress-container h2 {
-	font-size: 36px;
+	font-size: 42px;
 	margin: 0;
 	opacity: 0.8;
 	display: inline;
@@ -162,7 +164,7 @@ body {
 	transform: translateX(-50%);
 	text-align: center;
 	z-index: 998;
-	width: 720px;
+	width: 900px;
 }
 
 .floating-text a {
