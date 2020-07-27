@@ -23,7 +23,7 @@ body {
 }
 
 .year {
-	font-size: 36px;
+	font-size: 42px;
 	margin: 0;
 	opacity: 1;
 	font-family: 'Muli';
@@ -39,6 +39,7 @@ body {
 	margin: 20px;
 	overflow: hidden;
 	width: 900px;
+	
 }
 
 .course h6 {
@@ -46,6 +47,7 @@ body {
 	margin: 0;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	font-size: 14px;
 }
 
 .course h2 {
@@ -94,13 +96,13 @@ body {
 	top: 30px;
 	right: 30px;
 	text-align: right;
-	width: 200px;
+	width: 250px;
 }
 
 .progress-container h2 {
-	font-size: 42px;
+	font-size: 48px;
 	margin: 0;
-	opacity: 0.8;
+	opacity: 1;
 	display: inline;
 	
 }
@@ -112,16 +114,17 @@ body {
 	display: inline;
 	font-weight: 100;
 	padding-right: 5px;
+	
 }
 
-.progress {
+.progressbg {
 	background-color: rgb(234, 24, 75);
 	border-radius: 3px;
 	height: 5px;
 	width: 100%;
 }
 
-.progress::after {
+.progress {
 	border-radius: 3px;
 	background-color: rgb(39, 193, 136);
 	content: '';
@@ -129,12 +132,12 @@ body {
 	top: 0;
 	left: 0;
 	height: 5px;
-	width: 66%;
+	width: 10%;
 }
 
 .progress-text {
-	font-size: 10px;
-	opacity: 0.6;
+	font-size: 14px;
+	opacity: 1;
 	letter-spacing: 1px;
 }
 
@@ -172,6 +175,7 @@ body {
 	text-decoration: none;
 	padding-right: 10px;
 	padding-left: 10px;
+	font-size: 24px;
 }
 
 .floating-text a:hover {
