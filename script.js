@@ -7,11 +7,9 @@ function getRanking() {
     if (year == 'GERAL') {
         endpoint = "https://sheets.googleapis.com/v4/spreadsheets/1dzbcLzJlxPBLIKuP7BDI0xFqm3Wy-jozFHbIeY7T8bU/values/'RANKING GERAL'!G3:N12?key=AIzaSyBdJupU1WrSW8B0dhIxVi-PqLtFZDkGFFY";
     } else {
-        if (year == undefined) {
-            
+        if (year != null) {
             endpoint = "https://sheets.googleapis.com/v4/spreadsheets/1dzbcLzJlxPBLIKuP7BDI0xFqm3Wy-jozFHbIeY7T8bU/values/"+year+"!G3:N12?key=AIzaSyBdJupU1WrSW8B0dhIxVi-PqLtFZDkGFFY";
-        }
-        
+        }        
     }
 
     fetch(endpoint)
@@ -58,7 +56,7 @@ function getRanking() {
       });
       
       document.getElementById('ranking').innerHTML = output;  
-      if (year == undefined) {
+      if (year == null) {
         document.getElementById('ano').innerHTML = "RANKING 2020";
       } else {
         document.getElementById('ano').innerHTML = "RANKING " + year;
