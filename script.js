@@ -51,7 +51,7 @@ function getRanking() {
             output+= element[2] + '</h2></div><h1>';
             output+= element[1] + '</h1><h6>';
             output+= element[3] + ' jogos';
-            output+= ' +R$'+element[6]+' -R$'+Math.abs(element[7])+'</h6></div></div>';
+            output+= ' +R$'+element[6].replace(',','.')+' -R$'+Math.abs(parseFloat(element[7].replace(',','.'))+'</h6></div></div>';
         }
       });
       
