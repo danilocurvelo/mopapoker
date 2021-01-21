@@ -57,7 +57,7 @@ function getRanking() {
       
       document.getElementById('ranking').innerHTML = output;  
       if (year == null) {
-        document.getElementById('ano').innerHTML = "RANKING 2020";
+        document.getElementById('ano').innerHTML = "RANKING 2021";
       } else {
         document.getElementById('ano').innerHTML = "RANKING " + year;
       }
