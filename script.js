@@ -45,11 +45,11 @@ function getRanking() {
             if (parseFloat(balance) >= 0) {
                 output+= '<h3 style="color:#27C188">R$</h3> <h2 style="color:#27C188">';
             } else {
-                output+= '<h3 style="color:#EA184B">R$</h3> <h2 style="color:#EA184B">';
+                output+= '<h3 style="color:#EA184B">-R$</h3> <h2 style="color:#EA184B">';
                 
             }
             
-            output+= element[2] + '</h2></div><h1>';
+            output+= Math.abs(balance) + '</h2></div><h1>';
             output+= element[1] + '</h1><h6>';
             output+= element[3] + ' jogos';
             output+= ' +R$'+element[6].replace(',','.')+' -R$'+Math.abs(parseFloat(element[7].replace(',','.'))).toFixed(2)+'</h6></div></div>';
