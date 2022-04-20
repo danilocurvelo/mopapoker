@@ -41,7 +41,8 @@ function getRanking() {
             output+='<div class="course-preview"><h1>' + element[0] + '</h1></div>';
             output+='<div class="course-info"><div class="progress-container"><div class="progressbg"><div class="progress" style="width: '+ ((element[4]/element[3])*100).toFixed(2) +'%"></div></div><span class="progress-text">';
             output+= element[4] + ' ganhos / ' + element[5] + ' perdas ('+((element[4]/element[3])*100).toFixed(2)+'%)</span><br><br>'
-            if (parseFloat(element[2]) >= 0) {
+            var balance = element[2].replace(',','.');
+            if (parseFloat(balance) >= 0) {
                 output+= '<h3 style="color:#27C188">R$</h3> <h2 style="color:#27C188">';
             } else {
                 output+= '<h3 style="color:#EA184B">R$</h3> <h2 style="color:#EA184B">';
