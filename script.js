@@ -2,7 +2,7 @@ function getRanking() {
 
     var year = getParameterByName('year');
 
-    var endpoint = "https://sheets.googleapis.com/v4/spreadsheets/1dzbcLzJlxPBLIKuP7BDI0xFqm3Wy-jozFHbIeY7T8bU/values/2021!G3:N12?key=AIzaSyBdJupU1WrSW8B0dhIxVi-PqLtFZDkGFFY";
+    var endpoint = "https://sheets.googleapis.com/v4/spreadsheets/1dzbcLzJlxPBLIKuP7BDI0xFqm3Wy-jozFHbIeY7T8bU/values/2022!G3:N12?key=AIzaSyBdJupU1WrSW8B0dhIxVi-PqLtFZDkGFFY";
 
     if (year == 'GERAL') {
         endpoint = "https://sheets.googleapis.com/v4/spreadsheets/1dzbcLzJlxPBLIKuP7BDI0xFqm3Wy-jozFHbIeY7T8bU/values/'RANKING GERAL'!G3:N12?key=AIzaSyBdJupU1WrSW8B0dhIxVi-PqLtFZDkGFFY";
